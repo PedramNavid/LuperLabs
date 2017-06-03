@@ -11,6 +11,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **This is a hubflow family, please use hubflow when making changes or PRs to this repo!**
 
+Uses [Semantic UI React](https://react.semantic-ui.com/introduction)
+
 ## Running Locally
 
 1. build dependencies: `npm install`

@@ -9,6 +9,8 @@ This repo supports the our main website: [luperlabs.com](http://luperlabs.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+**This is a hubflow family, please use hubflow when making changes or PRs to this repo**
+
 ## Steps To Deploy
 
 1. run `npm start`

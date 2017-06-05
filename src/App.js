@@ -1,12 +1,12 @@
 /* eslint-disable max-len */
 
 import React, { Component } from 'react'
-import { Container, Header, Image, Segment, Menu} from 'semantic-ui-react'
+import {Container, Header, Image, Segment, Menu} from 'semantic-ui-react'
 
 const luper_image_src = 'assets/images/luper.jpg'
 
 class App extends Component {
-  state = {}
+  state = {activeItem: 0}
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
@@ -33,8 +33,20 @@ class App extends Component {
         contact
       </Menu.Item>
     </Menu>
-    <Segment>
-    hello
+    <Segment hidden={activeItem !== 0}>
+        default
+    </Segment>
+    <Segment hidden={activeItem !=='help'}>
+        help  
+    </Segment>
+    <Segment hidden={activeItem !=='about'}>
+        about us
+    </Segment>
+    <Segment hidden={activeItem !=='members'}>
+        members
+    </Segment>
+    <Segment hidden={activeItem !=='contact'}>
+        contact 
     </Segment>
   </Container>
 )

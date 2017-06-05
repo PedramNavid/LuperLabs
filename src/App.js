@@ -2,11 +2,14 @@
 
 import React, { Component } from 'react'
 import {Container, Header, Image, Segment, Menu} from 'semantic-ui-react'
-
-const luper_image_src = 'assets/images/luper.jpg'
+import Intro from './intro'
+import Help from './help'
+import About from './about'
+import Members from './members'
+import Contact from './contact'
 
 class App extends Component {
-  state = {activeItem: 0}
+  state = { }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
@@ -33,20 +36,20 @@ class App extends Component {
         contact
       </Menu.Item>
     </Menu>
-    <Segment hidden={activeItem !== 0}>
-        default
+    <Segment hidden={activeItem}>
+      <Intro />
     </Segment>
     <Segment hidden={activeItem !=='help'}>
-        help  
+      <Help />
     </Segment>
     <Segment hidden={activeItem !=='about'}>
-        about us
+      <About />
     </Segment>
     <Segment hidden={activeItem !=='members'}>
-        members
+      <Help />
     </Segment>
     <Segment hidden={activeItem !=='contact'}>
-        contact 
+      <Contact />
     </Segment>
   </Container>
 )

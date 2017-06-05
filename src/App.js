@@ -46,7 +46,7 @@ class App extends Component {
       <About />
     </Segment>
     <Segment hidden={activeItem !=='members'}>
-      <Help />
+      <Members />
     </Segment>
     <Segment hidden={activeItem !=='contact'}>
       <Contact />

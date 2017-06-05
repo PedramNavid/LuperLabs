@@ -9,7 +9,7 @@ class Help extends Component {
   return (
   <Container>
     <Header>How can we help you?</Header>
-    <p>No</p>
+    <p>We can't offer help or support. But keep on truckin'.</p>
   </Container>
   )
   }
